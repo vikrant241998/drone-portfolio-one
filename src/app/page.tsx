@@ -1,28 +1,22 @@
 "use client";
 import Link from 'next/link';
-
-// Agar aap component ke paas hi CSS rakhna chahte hain, toh 'Banner.module.css' use karein
-// Ya phir aap isse globals.css mein bhi daal sakte hain
 import './styles/home.css';
 
 const Home = () => {
-  // Aapke diye hue image ka URL (iska aspect ratio kafi wide hai)
-  const imageUrl = "https://static.wixstatic.com/media/84770f_55e52c1ac81f450fadd6509cbc317d0b~mv2.jpg/v1/fill/w_7453,h_3354,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_55e52c1ac81f450fadd6509cbc317d0b~mv2.jpg";
+  // const imageUrl = "https://static.wixstatic.com/media/84770f_55e52c1ac81f450fadd6509cbc317d0b~mv2.jpg/v1/fill/w_7453,h_3354,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_55e52c1ac81f450fadd6509cbc317d0b~mv2.jpg";
+  const imageUrl = "https://images.unsplash.com/photo-1514041884614-65858e220493?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
   return (
     <div className="hero-section">
       <div className="hero-background" style={{ backgroundImage: `url(${imageUrl})` }}>
-        {/* Background image CSS se handle hoga taaki woh cover ho */}
       </div>
 
       <div className="hero-content">
-        {/* Content ke upar ek halka sa overlay lagana achcha hai taaki text dikhe */}
         <div className="content-overlay"></div>
 
-        <div className="content-wrapper">
+        <div className="content-wrapper " data-aos="fade-right">
           <h1>
-            {/* Charley Knox */}
-            Charley Vicky
+            Charley Knox
           </h1>
           <p>
             DRONE PHOTOGRAPHY

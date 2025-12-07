@@ -1,20 +1,14 @@
-/* --- Hero/Banner Section --- */
 .hero-section {
     position: relative;
-    /* Full viewport height, header ke neeche se shuru ho */
     height: 100vh;
     width: 100%;
-    /* Header ki height agar fixed ho toh yahan usko minus kar sakte hain,
-       lekin 100vh rakhenge toh full screen lagega */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* Images spill na ho */
     text-align: center;
 }
 
-/* Background Image Container */
 .hero-background {
     position: absolute;
     top: 0;
@@ -22,14 +16,9 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    /* Image ko poora area cover karne do */
     background-position: center;
-    /* Image center mein rahe */
     z-index: 1;
-    /* Content ke peeche rahe */
 }
-
-/* banner.css ya globals.css */
 
 .hero-content {
     position: absolute;
@@ -37,14 +26,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-
     display: flex;
-    /* ✅ FIX 1: Content ko left mein dhakelne ke liye */
     justify-content: flex-start;
-
-    /* Vertical center hi rahega */
     align-items: center;
-
     color: white;
     z-index: 2;
 }
@@ -70,7 +54,6 @@
     letter-spacing: 6px;
 }
 
-/* --- Responsiveness (Mobile Fix) --- */
 @media (max-width: 1200px) {
     .content-wrapper {
         padding: 0 1rem 0 4rem;
@@ -101,9 +84,7 @@
         width: 100px;
     }
 
-    /* Mobile screen par heading ka size aur padding adjust karein */
     .content-wrapper {
-        /* Mobile par padding thoda kam kar do */
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         text-align: center;

@@ -1,6 +1,6 @@
-"use client"; 
+"use client";
 import React, { useState, FormEvent } from 'react';
-import '../styles/contact.css'; 
+import '../styles/contact.css';
 
 interface FormData {
     firstName: string;
@@ -37,16 +37,16 @@ const ContactPage = () => {
     // Form Validation Logic
     const validateForm = (): boolean => {
         const newErrors: Partial<FormData> = {};
-        
+
         // ✅ .trim() added for validation
         if (!formData.firstName.trim()) newErrors.firstName = 'Enter a first name.';
         if (!formData.lastName.trim()) newErrors.lastName = 'Enter a last name.';
-        
+
         // Basic email validation
         if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
             newErrors.email = 'Enter an email address like example@mysite.com.';
         }
-        
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -54,14 +54,14 @@ const ContactPage = () => {
     // Form Submission Handler
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        
+
         if (validateForm()) {
             console.log('Form Submitted:', formData);
-            
+
             alert('Message sent successfully!');
-            
+
             setFormData(INITIAL_STATE);
-            setErrors({}); 
+            setErrors({});
         }
     };
 
@@ -70,7 +70,8 @@ const ContactPage = () => {
             <section className="contact-section">
 
                 {/* --- Left Column: Contact Information --- */}
-                <div className="contact-info">
+                <div className="contact-info" data-aos="fade-up"
+                    data-aos-duration="3000">
                     <h1 className="page-title">Contact</h1>
                     <p className="represented-by">Represented By<br />
                         **Aviation Media Group**</p>
@@ -80,7 +81,9 @@ const ContactPage = () => {
                 </div>
 
                 {/* --- Right Column: Contact Form --- */}
-                <div className="contact-form-container">
+                <div className="contact-form-container" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
                     <form id="contactForm" className="contact-form" onSubmit={handleSubmit}>
 
                         {/* First Name & Last Name Row */}

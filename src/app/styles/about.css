@@ -60,7 +60,6 @@
     transform: scale(1.05);
 }
 
-/* --- 5. Mobile Responsiveness (768px se kam screen par) --- */
 @media (max-width: 992px) {
     .about-container {
         padding: 10rem 1rem 2rem 1rem;

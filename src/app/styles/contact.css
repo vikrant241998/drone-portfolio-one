@@ -1,7 +1,6 @@
 .dark-theme {
     color: #fff;
     background-color: #000;
-    border: 2px solid red;
     min-height: 100vh;
     padding: 10rem 1rem 1rem 5rem;
 }
@@ -12,7 +11,6 @@
     padding-left: 5%;
     padding-right: 5%;
     margin: 0 auto;
-    border: 2px solid green;
 }
 
 .contact-section {
@@ -22,7 +20,6 @@
 }
 
 .contact-info {
-    flex: 1;
     max-width: 350px;
     padding-top: 10px;
 }
