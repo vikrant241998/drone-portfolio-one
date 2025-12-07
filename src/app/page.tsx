@@ -21,8 +21,7 @@ const Home = () => {
 
         <div className="content-wrapper">
           <h1>
-            {/* Charley Knox */}
-            Charley Vikrant
+            Charley Knox
           </h1>
           <p>
             DRONE PHOTOGRAPHY
