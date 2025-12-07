@@ -1,0 +1,94 @@
+/* not-found.css (Ya global.css) */
+
+/* styles/notFound.css */
+
+/* styles/notFound.css */
+/* src/styles/notFound.css */
+
+.not-found-container {
+    /* Screen ke beech mein laane ke liye settings */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Header ko cover karne ke liye zaroori */
+    position: fixed; /* ✅ Position Fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    /* Poori screen height le lo */
+    min-height: 100vh; 
+    height: 100vh;
+    
+    background-color: #000000; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* ✅ Sabse upar dikhega, Header ko cover kar dega */
+    z-index: 9999; 
+}
+
+/* ... (Baki styles, jaise .error-code, .error-heading, etc. same rahenge) ... */
+/* ... (Baki styles jaise .error-code, .error-heading, submit-button, etc.) ... */
+/* ... (Baki styles, jaise .error-code, .error-heading, etc., same rahenge) ... */
+.error-content {
+    max-width: 600px;
+    padding: 40px;
+    /* Optional: Thoda soft background agar chahiye */
+    /* background-color: #111111; */ 
+    border-radius: 8px;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 8rem; /* Desktop */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ff4500; /* Ek eye-catching error colour */
+    line-height: 1;
+}
+
+.error-heading {
+    font-size: 2.5rem; /* Desktop */
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #aaaaaa;
+}
+
+/* Home Button Style (Aapki 'submit-button' class use ho rahi hai) */
+.home-button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+.home-button:hover {
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+    .error-code {
+        font-size: 6rem; /* Mobile par chhota */
+    }
+    .error-heading {
+        font-size: 2rem;
+    }
+    .error-content {
+        padding: 20px;
+    }
+}
